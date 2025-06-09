@@ -1,71 +1,45 @@
-# 📸 Evidencias de Pruebas - Sistema Letras Libres
+# 📚 Sistema de Préstamo de Libros - Letras Libres 📖
 
-Este documento contiene las capturas de pantalla realizadas durante la etapa de validación de la API, tanto de errores forzados como de operaciones exitosas.
-
----
-
-## 🔧 01 - Pruebas de Errores en Préstamos
-
-### 1.1 - Préstamo con `UsuarioId` inexistente
-
-- Descripción: Se envió un GUID inválido para `UsuarioId` al crear un préstamo.
-- Resultado actual: La API acepta el registro (status 201) ya que no hay validación implementada aún.
-- Evidencia: 
-  - 📂 `Capturas_Pruebas/01_Prestamos_Errores/Prestamo_UsuarioId_Invalido.png`
-
-### 1.2 - Préstamo con `LibroId` inexistente
-
-- Descripción: Se envió un GUID inválido para `LibroId` al crear un préstamo.
-- Resultado actual: La API acepta el registro (status 201) sin validar existencia del libro.
-- Evidencia: 
-  - 📂 `Capturas_Pruebas/02_Usuarios_Errores/Prestamo_LibroId_Invalido.png`
+Este proyecto corresponde a la **Evaluación 2 de Programación .NET** en la carrera de Ingeniería en Ejecución Informática.  
+Consiste en el desarrollo de una API RESTful para la gestión de préstamos de libros, utilizando **ASP.NET Core 8.0** y **Entity Framework Core**.
 
 ---
 
-## 🔧 02 - Pruebas de Error de Modelo Mal Formado
+## 🔧 Tecnologías Utilizadas
 
-### 2.1 - Body incompleto
-
-- Descripción: Se omitió el campo `Estado` en el JSON de creación de préstamo.
-- Resultado actual: La API devuelve `400 Bad Request` por validación de modelo fallida.
-- Evidencia: 
-  - 📂 `Capturas_Pruebas/03_Libros_Errores/Prestamo_FaltaEstado.png`
-
-### 2.2 - Body con formato incorrecto de fechas
-
-- Descripción: Se envió una fecha malformada en el JSON.
-- Resultado actual: La API devuelve `400 Bad Request`.
-- Evidencia:
-  - 📂 `Capturas_Pruebas/03_Libros_Errores/Prestamo_FechaInvalida.png`
+- ASP.NET Core Web API
+- Entity Framework Core
+- SQL Server LocalDB
+- Swagger UI para pruebas
+- Visual Studio 2022
 
 ---
 
-## ✅ 03 - Pruebas Exitosas de CRUD
+## 🎯 Objetivos del proyecto
 
-### 3.1 - Préstamos
+Desarrollar una API que permita:
 
-- Descripción: Creación de préstamo exitosa con datos válidos.
-- Evidencia:
-  - 📂 `Capturas_Pruebas/04_Prestamos_OK/Prestamo_Correcto.png`
-
-### 3.2 - Usuarios
-
-- Descripción: Registro de nuevo usuario correctamente.
-- Evidencia:
-  - 📂 `Capturas_Pruebas/05_Usuarios_OK/Usuario_Creado.png`
-
-### 3.3 - Libros
-
-- Descripción: Registro de nuevo libro correctamente.
-- Evidencia:
-  - 📂 `Capturas_Pruebas/06_Libros_OK/Libro_Creado.png`
+- Gestionar Libros (CRUD completo).
+- Gestionar Usuarios (CRUD completo).
+- Gestionar Préstamos (registro de préstamos, relaciones, validaciones).
+- Aplicar validaciones y manejo de errores.
+- Implementar relaciones entre entidades usando EF Core.
 
 ---
 
-## 📝 Observaciones:
+## ⚙️ Configuración del Proyecto
 
-- Estas pruebas fueron realizadas antes de implementar las validaciones y manejo de errores.
-- Posteriormente, se incorporarán controles de validación para restringir el ingreso de datos inválidos, junto a manejo de excepciones.
+### 1️⃣ Requisitos Previos
 
----
+- Visual Studio 2022
+- .NET 8 SDK instalado
+- SQL Server LocalDB (o modificar la cadena de conexión según corresponda)
 
+### 2️⃣ Restaurar el proyecto
+
+1. Clonar el repositorio o descomprimir el archivo ZIP.
+2. Abrir el proyecto en Visual Studio.
+3. Aplicar las migraciones para generar la base de datos:
+
+```bash
+dotnet ef database update
