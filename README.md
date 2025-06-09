@@ -42,4 +42,10 @@ Desarrollar una API que permita:
 3. Aplicar las migraciones para generar la base de datos:
 
 ```bash
-dotnet ef database update
+dotnet ef database update 
+```
+
+### 3️⃣ Consultar documentación adicional
+
+- Para más detalles sobre las pruebas y ejemplos de uso de la API, consulta el README de CapturasPruebas.
+- Este enlace proporcionará acceso directo al README de la carpeta CapturasPruebas, facilitando a los usuarios encontrar información adicional sobre las pruebas y ejemplos de uso.
