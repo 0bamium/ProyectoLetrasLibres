@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "LetrasLibres.Controllers.LibrosController",
-    "Method": "Getlibros",
+    "Method": "GetLibros",
     "RelativePath": "api/Libros",
     "HttpMethod": "GET",
     "IsController": true,
@@ -21,14 +21,14 @@
   },
   {
     "ContainingType": "LetrasLibres.Controllers.LibrosController",
-    "Method": "PostLibros",
+    "Method": "PostLibro",
     "RelativePath": "api/Libros",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "libros",
+        "Name": "libro",
         "Type": "LetrasLibres.Models.Data.Entities.Libros",
         "IsRequired": true
       }
@@ -47,7 +47,7 @@
   },
   {
     "ContainingType": "LetrasLibres.Controllers.LibrosController",
-    "Method": "GetLibros",
+    "Method": "GetLibro",
     "RelativePath": "api/Libros/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -73,7 +73,7 @@
   },
   {
     "ContainingType": "LetrasLibres.Controllers.LibrosController",
-    "Method": "PutLibros",
+    "Method": "PutLibro",
     "RelativePath": "api/Libros/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -85,7 +85,7 @@
         "IsRequired": true
       },
       {
-        "Name": "libros",
+        "Name": "libro",
         "Type": "LetrasLibres.Models.Data.Entities.Libros",
         "IsRequired": true
       }
@@ -94,7 +94,7 @@
   },
   {
     "ContainingType": "LetrasLibres.Controllers.LibrosController",
-    "Method": "DeleteLibros",
+    "Method": "DeleteLibro",
     "RelativePath": "api/Libros/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -107,56 +107,56 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "LetrasLibres.Controllers.PrestamosController",
-    "Method": "Getprestamos",
-    "RelativePath": "api/Prestamos",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[LetrasLibres.Models.Data.Entities.Prestamos, LetrasLibres, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "LetrasLibres.Controllers.PrestamosController",
-    "Method": "PostPrestamos",
-    "RelativePath": "api/Prestamos",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "prestamos",
-        "Type": "LetrasLibres.Models.Data.Entities.Prestamos",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "LetrasLibres.Models.Data.Entities.Prestamos",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
   },
   {
     "ContainingType": "LetrasLibres.Controllers.PrestamosController",
     "Method": "GetPrestamos",
+    "RelativePath": "api/Prestamos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LetrasLibres.Models.Data.DTOs.PrestamoDto, LetrasLibres, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LetrasLibres.Controllers.PrestamosController",
+    "Method": "PostPrestamo",
+    "RelativePath": "api/Prestamos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "LetrasLibres.Models.Data.DTOs.CreatePrestamoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LetrasLibres.Models.Data.DTOs.PrestamoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LetrasLibres.Controllers.PrestamosController",
+    "Method": "GetPrestamo",
     "RelativePath": "api/Prestamos/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -170,7 +170,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LetrasLibres.Models.Data.Entities.Prestamos",
+        "Type": "LetrasLibres.Models.Data.DTOs.PrestamoDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -182,7 +182,7 @@
   },
   {
     "ContainingType": "LetrasLibres.Controllers.PrestamosController",
-    "Method": "PutPrestamos",
+    "Method": "PutPrestamo",
     "RelativePath": "api/Prestamos/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -194,8 +194,8 @@
         "IsRequired": true
       },
       {
-        "Name": "prestamos",
-        "Type": "LetrasLibres.Models.Data.Entities.Prestamos",
+        "Name": "input",
+        "Type": "LetrasLibres.Models.Data.DTOs.UpdatePrestamoDto",
         "IsRequired": true
       }
     ],
@@ -203,7 +203,7 @@
   },
   {
     "ContainingType": "LetrasLibres.Controllers.PrestamosController",
-    "Method": "DeletePrestamos",
+    "Method": "DeletePrestamo",
     "RelativePath": "api/Prestamos/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -219,7 +219,7 @@
   },
   {
     "ContainingType": "LetrasLibres.Controllers.UsuariosController",
-    "Method": "Getusuarios",
+    "Method": "GetUsuarios",
     "RelativePath": "api/Usuarios",
     "HttpMethod": "GET",
     "IsController": true,
@@ -227,7 +227,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[LetrasLibres.Models.Data.Entities.Usuarios, LetrasLibres, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LetrasLibres.Models.Data.DTOs.UsuarioDto, LetrasLibres, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -239,21 +239,21 @@
   },
   {
     "ContainingType": "LetrasLibres.Controllers.UsuariosController",
-    "Method": "PostUsuarios",
+    "Method": "PostUsuario",
     "RelativePath": "api/Usuarios",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "usuarios",
-        "Type": "LetrasLibres.Models.Data.Entities.Usuarios",
+        "Name": "input",
+        "Type": "LetrasLibres.Models.Data.DTOs.CreateUsuarioDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "LetrasLibres.Models.Data.Entities.Usuarios",
+        "Type": "LetrasLibres.Models.Data.DTOs.UsuarioDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -265,7 +265,7 @@
   },
   {
     "ContainingType": "LetrasLibres.Controllers.UsuariosController",
-    "Method": "GetUsuarios",
+    "Method": "GetUsuario",
     "RelativePath": "api/Usuarios/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -279,7 +279,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LetrasLibres.Models.Data.Entities.Usuarios",
+        "Type": "LetrasLibres.Models.Data.DTOs.UsuarioDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -291,7 +291,7 @@
   },
   {
     "ContainingType": "LetrasLibres.Controllers.UsuariosController",
-    "Method": "PutUsuarios",
+    "Method": "PutUsuario",
     "RelativePath": "api/Usuarios/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -303,8 +303,8 @@
         "IsRequired": true
       },
       {
-        "Name": "usuarios",
-        "Type": "LetrasLibres.Models.Data.Entities.Usuarios",
+        "Name": "input",
+        "Type": "LetrasLibres.Models.Data.DTOs.UpdateUsuarioDto",
         "IsRequired": true
       }
     ],
@@ -312,7 +312,7 @@
   },
   {
     "ContainingType": "LetrasLibres.Controllers.UsuariosController",
-    "Method": "DeleteUsuarios",
+    "Method": "DeleteUsuario",
     "RelativePath": "api/Usuarios/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,

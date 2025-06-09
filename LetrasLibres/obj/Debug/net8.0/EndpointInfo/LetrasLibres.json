@@ -203,7 +203,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Prestamos"
+                    "$ref": "#/components/schemas/PrestamoDto"
                   }
                 }
               },
@@ -211,7 +211,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Prestamos"
+                    "$ref": "#/components/schemas/PrestamoDto"
                   }
                 }
               },
@@ -219,7 +219,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Prestamos"
+                    "$ref": "#/components/schemas/PrestamoDto"
                   }
                 }
               }
@@ -235,17 +235,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Prestamos"
+                "$ref": "#/components/schemas/CreatePrestamoDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Prestamos"
+                "$ref": "#/components/schemas/CreatePrestamoDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Prestamos"
+                "$ref": "#/components/schemas/CreatePrestamoDto"
               }
             }
           }
@@ -256,17 +256,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Prestamos"
+                  "$ref": "#/components/schemas/PrestamoDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Prestamos"
+                  "$ref": "#/components/schemas/PrestamoDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Prestamos"
+                  "$ref": "#/components/schemas/PrestamoDto"
                 }
               }
             }
@@ -296,17 +296,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Prestamos"
+                  "$ref": "#/components/schemas/PrestamoDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Prestamos"
+                  "$ref": "#/components/schemas/PrestamoDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Prestamos"
+                  "$ref": "#/components/schemas/PrestamoDto"
                 }
               }
             }
@@ -332,17 +332,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Prestamos"
+                "$ref": "#/components/schemas/UpdatePrestamoDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Prestamos"
+                "$ref": "#/components/schemas/UpdatePrestamoDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Prestamos"
+                "$ref": "#/components/schemas/UpdatePrestamoDto"
               }
             }
           }
@@ -388,7 +388,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Usuarios"
+                    "$ref": "#/components/schemas/UsuarioDto"
                   }
                 }
               },
@@ -396,7 +396,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Usuarios"
+                    "$ref": "#/components/schemas/UsuarioDto"
                   }
                 }
               },
@@ -404,7 +404,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Usuarios"
+                    "$ref": "#/components/schemas/UsuarioDto"
                   }
                 }
               }
@@ -420,17 +420,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Usuarios"
+                "$ref": "#/components/schemas/CreateUsuarioDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Usuarios"
+                "$ref": "#/components/schemas/CreateUsuarioDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Usuarios"
+                "$ref": "#/components/schemas/CreateUsuarioDto"
               }
             }
           }
@@ -441,17 +441,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Usuarios"
+                  "$ref": "#/components/schemas/UsuarioDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Usuarios"
+                  "$ref": "#/components/schemas/UsuarioDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Usuarios"
+                  "$ref": "#/components/schemas/UsuarioDto"
                 }
               }
             }
@@ -481,17 +481,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Usuarios"
+                  "$ref": "#/components/schemas/UsuarioDto"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Usuarios"
+                  "$ref": "#/components/schemas/UsuarioDto"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Usuarios"
+                  "$ref": "#/components/schemas/UsuarioDto"
                 }
               }
             }
@@ -517,17 +517,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Usuarios"
+                "$ref": "#/components/schemas/UpdateUsuarioDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Usuarios"
+                "$ref": "#/components/schemas/UpdateUsuarioDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Usuarios"
+                "$ref": "#/components/schemas/UpdateUsuarioDto"
               }
             }
           }
@@ -602,15 +602,58 @@
   },
   "components": {
     "schemas": {
-      "Libros": {
+      "CreatePrestamoDto": {
         "required": [
-          "autor",
-          "cantidad",
-          "editorial",
-          "genero",
-          "isbn",
-          "titulo"
+          "libroId",
+          "usuarioId"
         ],
+        "type": "object",
+        "properties": {
+          "usuarioId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "libroId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateUsuarioDto": {
+        "required": [
+          "apellido",
+          "correo",
+          "direccion",
+          "nombre"
+        ],
+        "type": "object",
+        "properties": {
+          "nombre": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "apellido": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "telefono": {
+            "type": "string",
+            "nullable": true
+          },
+          "correo": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "direccion": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Libros": {
         "type": "object",
         "properties": {
           "id": {
@@ -618,74 +661,37 @@
             "format": "uuid"
           },
           "titulo": {
-            "maxLength": 200,
-            "minLength": 0,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "autor": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "genero": {
-            "maxLength": 50,
-            "minLength": 0,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "descripcion": {
-            "maxLength": 1000,
-            "minLength": 0,
             "type": "string",
             "nullable": true
           },
           "editorial": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "isbn": {
-            "minLength": 1,
-            "pattern": "^(?=(?:\\D*\\d){10}(?:(?:\\D*\\d){3})?$)[\\d-]+$",
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "cantidad": {
-            "maximum": 1000,
-            "minimum": 0,
             "type": "integer",
             "format": "int32"
-          },
-          "fechaPublicacion": {
-            "type": "string",
-            "format": "date",
-            "nullable": true
-          },
-          "idioma": {
-            "maxLength": 50,
-            "minLength": 0,
-            "type": "string",
-            "nullable": true
-          },
-          "calificacionPromedio": {
-            "maximum": 5,
-            "minimum": 0,
-            "type": "number",
-            "format": "double",
-            "nullable": true
-          },
-          "estaDisponible": {
-            "type": "boolean",
-            "readOnly": true
           }
         },
         "additionalProperties": false
       },
-      "Prestamos": {
-        "required": [
-          "estado",
-          "fechaPrestamo",
-          "libroId",
-          "usuarioId"
-        ],
+      "PrestamoDto": {
         "type": "object",
         "properties": {
           "id": {
@@ -696,15 +702,9 @@
             "type": "string",
             "format": "uuid"
           },
-          "usuario": {
-            "$ref": "#/components/schemas/Usuarios"
-          },
           "libroId": {
             "type": "string",
             "format": "uuid"
-          },
-          "libro": {
-            "$ref": "#/components/schemas/Libros"
           },
           "fechaPrestamo": {
             "type": "string",
@@ -720,13 +720,31 @@
             "format": "date-time"
           },
           "estado": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdatePrestamoDto": {
+        "required": [
+          "estado",
+          "fechaDevolucion"
+        ],
+        "type": "object",
+        "properties": {
+          "fechaDevolucion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "estado": {
             "minLength": 1,
             "type": "string"
           }
         },
         "additionalProperties": false
       },
-      "Usuarios": {
+      "UpdateUsuarioDto": {
         "required": [
           "apellido",
           "correo",
@@ -735,10 +753,6 @@
         ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "nombre": {
             "minLength": 1,
             "type": "string"
@@ -753,11 +767,42 @@
           },
           "correo": {
             "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "format": "email"
           },
           "direccion": {
             "minLength": 1,
             "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellido": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefono": {
+            "type": "string",
+            "nullable": true
+          },
+          "correo": {
+            "type": "string",
+            "nullable": true
+          },
+          "direccion": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
