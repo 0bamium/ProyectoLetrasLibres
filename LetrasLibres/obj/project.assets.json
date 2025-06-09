@@ -8193,11 +8193,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\seba\\source\\repos\\LetrasLibres\\LetrasLibres\\LetrasLibres.csproj",
+      "projectUniqueName": "C:\\Users\\seba\\Desktop\\patrones\\ProyectoLetrasLibres\\LetrasLibres\\LetrasLibres.csproj",
       "projectName": "LetrasLibres",
-      "projectPath": "C:\\Users\\seba\\source\\repos\\LetrasLibres\\LetrasLibres\\LetrasLibres.csproj",
+      "projectPath": "C:\\Users\\seba\\Desktop\\patrones\\ProyectoLetrasLibres\\LetrasLibres\\LetrasLibres.csproj",
       "packagesPath": "C:\\Users\\seba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\seba\\source\\repos\\LetrasLibres\\LetrasLibres\\obj\\",
+      "outputPath": "C:\\Users\\seba\\Desktop\\patrones\\ProyectoLetrasLibres\\LetrasLibres\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
