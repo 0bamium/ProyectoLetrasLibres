@@ -1,13 +1,9 @@
 ﻿// Controllers/LibrosController.cs
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using LetrasLibres.Models.Data;
 using LetrasLibres.Models.Data.Entities;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace LetrasLibres.Controllers
 {

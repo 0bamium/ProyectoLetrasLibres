@@ -3,14 +3,8 @@
 using LetrasLibres.Models.Data;
 using LetrasLibres.Models.Data.DTOs;
 using LetrasLibres.Models.Data.Entities;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace LetrasLibres.Controllers
 {

@@ -7,7 +7,7 @@ namespace LetrasLibres.Models.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-            
+
         }
 
         // estas son las tablas que se van a crear en la base de datos

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace LetrasLibres.Models.Data.Entities
+﻿namespace LetrasLibres.Models.Data.Entities
 {
     public class Libros
     {

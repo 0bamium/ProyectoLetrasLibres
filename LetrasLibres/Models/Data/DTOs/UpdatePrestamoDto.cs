@@ -1,5 +1,4 @@
 ﻿// Models/Data/DTOs/UpdatePrestamoDto.cs
-using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace LetrasLibres.Models.Data.DTOs

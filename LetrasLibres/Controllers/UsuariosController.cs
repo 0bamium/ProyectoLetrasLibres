@@ -1,15 +1,10 @@
 ﻿// Controllers/UsuariosController.cs
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using LetrasLibres.Models.Data;
+using LetrasLibres.Models.Data.DTOs;
+using LetrasLibres.Models.Data.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using LetrasLibres.Models.Data;
-using LetrasLibres.Models.Data.Entities;
-using LetrasLibres.Models.Data.DTOs;
 
 namespace LetrasLibres.Controllers
 {

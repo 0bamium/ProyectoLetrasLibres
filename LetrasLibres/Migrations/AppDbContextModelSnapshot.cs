@@ -36,6 +36,7 @@ namespace LetrasLibres.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Descripcion")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Editorial")
@@ -126,13 +127,13 @@ namespace LetrasLibres.Migrations
             modelBuilder.Entity("LetrasLibres.Models.Data.Entities.Prestamos", b =>
                 {
                     b.HasOne("LetrasLibres.Models.Data.Entities.Libros", "Libro")
-                        .WithMany("Prestamo")
+                        .WithMany()
                         .HasForeignKey("LibroId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("LetrasLibres.Models.Data.Entities.Usuarios", "Usuario")
-                        .WithMany("Prestamo")
+                        .WithMany()
                         .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -140,16 +141,6 @@ namespace LetrasLibres.Migrations
                     b.Navigation("Libro");
 
                     b.Navigation("Usuario");
-                });
-
-            modelBuilder.Entity("LetrasLibres.Models.Data.Entities.Libros", b =>
-                {
-                    b.Navigation("Prestamo");
-                });
-
-            modelBuilder.Entity("LetrasLibres.Models.Data.Entities.Usuarios", b =>
-                {
-                    b.Navigation("Prestamo");
                 });
 #pragma warning restore 612, 618
         }
