@@ -47,5 +47,5 @@ dotnet ef database update
 
 ### 3️⃣ Consultar documentación adicional
 
-- Para más detalles sobre las pruebas y ejemplos de uso de la API, consulta el README de CapturasPruebas.
+- Para más detalles sobre las pruebas y ejemplos de uso de la API, consulta el [README de CapturasPruebas](CapturasPruebas/README.md).
 - Este enlace proporcionará acceso directo al README de la carpeta CapturasPruebas, facilitando a los usuarios encontrar información adicional sobre las pruebas y ejemplos de uso.
