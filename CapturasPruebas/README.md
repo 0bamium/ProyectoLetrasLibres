@@ -1,17 +1,16 @@
 
-# 🧾 Evidencia de Manejo de Errores en LibrosController
+# 🧾 Evidencia de Manejo de Errores en Controllers
 
-Este documento presenta la evidencia de los cambios aplicados al controlador `LibrosController`, enfocándose en cómo se gestionaban los errores **antes** y **después** de aplicar un adecuado manejo mediante `try-catch`, códigos de estado y respuestas claras.
+Este documento presenta la evidencia de los cambios aplicados a los controllers `LibrosController`, `PrestamosController` y `UsuariosController`, enfocándose en cómo se gestionaban los errores **antes** y **después** de aplicar un adecuado manejo mediante `try-catch`, códigos de estado y respuestas claras.
 
-> 📁 **Importante:** Las capturas no se encuentran en Swagger, sino directamente desde el código de los métodos del controller.
+> 📁 **Nota:** Las capturas fueron tomadas directamente del código fuente, no del Swagger.
 
 ---
 
-## 📚 Métodos Comparados
 
-A continuación, se muestran los métodos revisados junto a sus respectivas capturas:
+## 📂 LibrosController
 
-### 1. `GET: api/Libros` — Obtener todos los libros
+### 1. `GET` — Obtener todos
 
 - **Antes del manejo de errores:**
   ![GetLibros](./CodigoAntes/LibrosController/GetLibros.png)
@@ -21,7 +20,7 @@ A continuación, se muestran los métodos revisados junto a sus respectivas capt
 
 ---
 
-### 2. `GET: api/Libros/{id}` — Obtener un libro por ID
+### 2. `GET {id}` — Obtener por ID
 
 - **Antes del manejo de errores:**
   ![GetLibrosId](./CodigoAntes/LibrosController/GetLibrosId.png)
@@ -31,7 +30,7 @@ A continuación, se muestran los métodos revisados junto a sus respectivas capt
 
 ---
 
-### 3. `POST: api/Libros` — Agregar un nuevo libro
+### 3. `POST` — Crear nuevo
 
 - **Antes del manejo de errores:**
   ![PostLibros](./CodigoAntes/LibrosController/PostLibros.png)
@@ -41,7 +40,7 @@ A continuación, se muestran los métodos revisados junto a sus respectivas capt
 
 ---
 
-### 4. `PUT: api/Libros/{id}` — Modificar un libro
+### 4. `PUT {id}` — Modificar
 
 - **Antes del manejo de errores:**
   ![PutLibros](./CodigoAntes/LibrosController/PutLibros.png)
@@ -51,7 +50,7 @@ A continuación, se muestran los métodos revisados junto a sus respectivas capt
 
 ---
 
-### 5. `DELETE: api/Libros/{id}` — Eliminar un libro
+### 5. `DELETE {id}` — Eliminar
 
 - **Antes del manejo de errores:**
   ![DeleteLibros](./CodigoAntes/LibrosController/DeleteLibros.png)
@@ -61,6 +60,110 @@ A continuación, se muestran los métodos revisados junto a sus respectivas capt
 
 ---
 
+## 📂 PrestamosController
+
+### 1. `GET` — Obtener todos
+
+- **Antes del manejo de errores:**
+  ![GetPrestamos](./CodigoAntes/PrestamosController/GetPrestamos.png)
+
+- **Después del manejo de errores:**
+  ![GetPrestamosCorregido](./CodigoCorregido/PrestamosController/GetPrestamosCorregido.png)
+
+---
+
+### 2. `GET {id}` — Obtener por ID
+
+- **Antes del manejo de errores:**
+  ![GetPrestamosId](./CodigoAntes/PrestamosController/GetPrestamosId.png)
+
+- **Después del manejo de errores:**
+  ![GetPrestamosIdCorregido](./CodigoCorregido/PrestamosController/GetPrestamosIdCorregido.png)
+
+---
+
+### 3. `POST` — Crear nuevo
+
+- **Antes del manejo de errores:**
+  ![PostPrestamos](./CodigoAntes/PrestamosController/PostPrestamos.png)
+
+- **Después del manejo de errores:**
+  ![PostPrestamosCorregido](./CodigoCorregido/PrestamosController/PostPrestamosCorregido.png)
+
+---
+
+### 4. `PUT {id}` — Modificar
+
+- **Antes del manejo de errores:**
+  ![PutPrestamos](./CodigoAntes/PrestamosController/PutPrestamos.png)
+
+- **Después del manejo de errores:**
+  ![PutPrestamosCorregido](./CodigoCorregido/PrestamosController/PutPrestamosCorregido.png)
+
+---
+
+### 5. `DELETE {id}` — Eliminar
+
+- **Antes del manejo de errores:**
+  ![DeletePrestamos](./CodigoAntes/PrestamosController/DeletePrestamos.png)
+
+- **Después del manejo de errores:**
+  ![DeletePrestamosCorregido](./CodigoCorregido/PrestamosController/DeletePrestamosCorregido.png)
+
+---
+
+## 📂 UsuariosController
+
+### 1. `GET` — Obtener todos
+
+- **Antes del manejo de errores:**
+  ![GetUsuarios](./CodigoAntes/UsuariosController/GetUsuarios.png)
+
+- **Después del manejo de errores:**
+  ![GetUsuariosCorregido](./CodigoCorregido/UsuariosController/GetUsuariosCorregido.png)
+
+---
+
+### 2. `GET {id}` — Obtener por ID
+
+- **Antes del manejo de errores:**
+  ![GetUsuariosId](./CodigoAntes/UsuariosController/GetUsuariosId.png)
+
+- **Después del manejo de errores:**
+  ![GetUsuariosIdCorregido](./CodigoCorregido/UsuariosController/GetUsuariosIdCorregido.png)
+
+---
+
+### 3. `POST` — Crear nuevo
+
+- **Antes del manejo de errores:**
+  ![PostUsuarios](./CodigoAntes/UsuariosController/PostUsuarios.png)
+
+- **Después del manejo de errores:**
+  ![PostUsuariosCorregido](./CodigoCorregido/UsuariosController/PostUsuariosCorregido.png)
+
+---
+
+### 4. `PUT {id}` — Modificar
+
+- **Antes del manejo de errores:**
+  ![PutUsuarios](./CodigoAntes/UsuariosController/PutUsuarios.png)
+
+- **Después del manejo de errores:**
+  ![PutUsuariosCorregido](./CodigoCorregido/UsuariosController/PutUsuariosCorregido.png)
+
+---
+
+### 5. `DELETE {id}` — Eliminar
+
+- **Antes del manejo de errores:**
+  ![DeleteUsuarios](./CodigoAntes/UsuariosController/DeleteUsuarios.png)
+
+- **Después del manejo de errores:**
+  ![DeleteUsuariosCorregido](./CodigoCorregido/UsuariosController/DeleteUsuariosCorregido.png)
+
+---
+
 ## ✅ Conclusión
 
-El cambio más significativo está en la robustez del sistema: ahora el controlador responde adecuadamente ante entradas inválidas, errores de conexión o conflictos, brindando una mejor experiencia de desarrollo, mantenimiento y depuración.
+Gracias al manejo de errores implementado, los controllers ahora entregan respuestas más seguras y comprensibles, mejorando tanto la experiencia del desarrollador como la estabilidad del sistema.
