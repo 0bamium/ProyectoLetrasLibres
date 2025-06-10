@@ -1,6 +1,6 @@
 # 📸 Evidencias de Pruebas - Sistema Letras Libres
 
-Este documento contiene las capturas de pantalla realizadas durante la etapa de validación de la API, tanto de errores forzados como de operaciones exitosas.
+Este documento contiene las capturas de pantalla realizadas durante la etapa de validación de la API, tanto del codigo antes de las validaciones como las de despues del manejo de errores.
 
 ---
 
