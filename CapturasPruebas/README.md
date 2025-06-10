@@ -1,70 +1,66 @@
-# 📸 Evidencias de Pruebas - Sistema Letras Libres
 
-Este documento contiene las capturas de pantalla realizadas durante la etapa de validación de la API, tanto del codigo antes de las validaciones como las de despues del manejo de errores.
+# 🧾 Evidencia de Manejo de Errores en LibrosController
 
----
+Este documento presenta la evidencia de los cambios aplicados al controlador `LibrosController`, enfocándose en cómo se gestionaban los errores **antes** y **después** de aplicar un adecuado manejo mediante `try-catch`, códigos de estado y respuestas claras.
 
-## 🔧 01 - Pruebas de Errores en Préstamos
-
-### 1.1 - Préstamo con `UsuarioId` inexistente
-
-- Descripción: Se envió un GUID inválido para `UsuarioId` al crear un préstamo.
-- Resultado actual: La API acepta el registro (status 201) ya que no hay validación implementada aún.
-- Evidencia: 
-  - ![Prestamo UsuarioId Invalido](01_Prestamos_Errores/Prestamo_UsuarioId_Invalido.png)
-
-### 1.2 - Préstamo con `LibroId` inexistente
-
-- Descripción: Se envió un GUID inválido para `LibroId` al crear un préstamo.
-- Resultado actual: La API acepta el registro (status 201) sin validar existencia del libro.
-- Evidencia: 
-  - ![Prestamo LibroId Invalido](02_Usuarios_Errores/Prestamo_LibroId_Invalido.png)
+> 📁 **Importante:** Las capturas no se encuentran en Swagger, sino directamente desde el código de los métodos del controller.
 
 ---
 
-## 🔧 02 - Pruebas de Error de Modelo Mal Formado
+## 📚 Métodos Comparados
 
-### 2.1 - Body incompleto
+A continuación, se muestran los métodos revisados junto a sus respectivas capturas:
 
-- Descripción: Se omitió el campo `Estado` en el JSON de creación de préstamo.
-- Resultado actual: La API devuelve `400 Bad Request` por validación de modelo fallida.
-- Evidencia: 
-  - ![Prestamo Falta Estado](03_Libros_Errores/Prestamo_FaltaEstado.png)
+### 1. `GET: api/Libros` — Obtener todos los libros
 
-### 2.2 - Body con formato incorrecto de fechas
+- **Antes del manejo de errores:**
+  ![GetLibros](./CodigoAntes/LibrosController/GetLibros.png)
 
-- Descripción: Se envió una fecha malformada en el JSON.
-- Resultado actual: La API devuelve `400 Bad Request`.
-- Evidencia:
-  - ![Prestamo Fecha Invalida](03_Libros_Errores/Prestamo_FechaInvalida.png)
+- **Después del manejo de errores:**
+  ![GetLibrosCorregido](./CodigoCorregido/LibrosController/GetLibrosCorregido.png)
 
 ---
 
-## ✅ 03 - Pruebas Exitosas de CRUD
+### 2. `GET: api/Libros/{id}` — Obtener un libro por ID
 
-### 3.1 - Préstamos
+- **Antes del manejo de errores:**
+  ![GetLibrosId](./CodigoAntes/LibrosController/GetLibrosId.png)
 
-- Descripción: Creación de préstamo exitosa con datos válidos.
-- Evidencia:
-  - ![Prestamo Correcto](04_Prestamos_OK/Prestamo_Correcto.png)
-
-### 3.2 - Usuarios
-
-- Descripción: Registro de nuevo usuario correctamente.
-- Evidencia:
-  - ![Usuario Creado](05_Usuarios_OK/Usuario_Creado.png)
-
-### 3.3 - Libros
-
-- Descripción: Registro de nuevo libro correctamente.
-- Evidencia:
-  - ![Libro Creado](06_Libros_OK/Libro_Creado.png)
+- **Después del manejo de errores:**
+  ![GetLibrosIdCorregido](./CodigoCorregido/LibrosController/GetLibrosIdCorregido.png)
 
 ---
 
-## 📝 Observaciones:
+### 3. `POST: api/Libros` — Agregar un nuevo libro
 
-- Estas pruebas fueron realizadas antes de implementar las validaciones y manejo de errores.
-- Posteriormente, se incorporarán controles de validación para restringir el ingreso de datos inválidos, junto a manejo de excepciones.
+- **Antes del manejo de errores:**
+  ![PostLibros](./CodigoAntes/LibrosController/PostLibros.png)
+
+- **Después del manejo de errores:**
+  ![PostLibrosCorregido](./CodigoCorregido/LibrosController/PostLibrosCorregido.png)
 
 ---
+
+### 4. `PUT: api/Libros/{id}` — Modificar un libro
+
+- **Antes del manejo de errores:**
+  ![PutLibros](./CodigoAntes/LibrosController/PutLibros.png)
+
+- **Después del manejo de errores:**
+  ![PutLibrosCorregido](./CodigoCorregido/LibrosController/PutLibrosCorregido.png)
+
+---
+
+### 5. `DELETE: api/Libros/{id}` — Eliminar un libro
+
+- **Antes del manejo de errores:**
+  ![DeleteLibros](./CodigoAntes/LibrosController/DeleteLibros.png)
+
+- **Después del manejo de errores:**
+  ![DeleteLibrosCorregido](./CodigoCorregido/LibrosController/DeleteLibrosCorregido.png)
+
+---
+
+## ✅ Conclusión
+
+El cambio más significativo está en la robustez del sistema: ahora el controlador responde adecuadamente ante entradas inválidas, errores de conexión o conflictos, brindando una mejor experiencia de desarrollo, mantenimiento y depuración.
