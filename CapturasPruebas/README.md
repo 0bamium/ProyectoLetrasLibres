@@ -91,7 +91,8 @@ Este documento presenta la evidencia de los cambios aplicados a los controllers 
   ![GetPrestamosId](./CodigoAntes/PrestamosController/GetPrestamosId.png)
 
 - **Después del manejo de errores:**
-  [GetIdPrestamosCorregido](./CodigoCorregido/PrestamosController/GetIdPrestamosCorregido.png)
+  
+  ![GetIdPrestamosCorregido](./CodigoCorregido/PrestamosController/GetIdPrestamosCorregido.png)
 
 ---
 
