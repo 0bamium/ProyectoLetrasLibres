@@ -92,7 +92,7 @@ Este documento presenta la evidencia de los cambios aplicados a los controllers 
 
 - **Después del manejo de errores:**
   
-  ![GetIdPrestamosCorregido](./CodigoCorregido/PrestamosController/GetPrestamosIdCorregido.png)
+  ![https://github.com/0bamium/ProyectoLetrasLibres/blob/e8408a15d2f1a88820fd77c5307f7608737c41cc/CapturasPruebas/CodigoCorregido/PrestamosController/GetIdPrestamosCorregido.png)
 
 ---
 
