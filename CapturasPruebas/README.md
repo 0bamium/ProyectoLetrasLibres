@@ -87,7 +87,6 @@ Este documento presenta la evidencia de los cambios aplicados a los controllers 
 ### 2. `GET {id}` — Obtener por ID
 
 - **Antes del manejo de errores:**
-  
   ![GetPrestamosId](./CodigoAntes/PrestamosController/GetPrestamosId.png)
 
 - **Después del manejo de errores:**
