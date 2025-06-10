@@ -13,9 +13,11 @@ Este documento presenta la evidencia de los cambios aplicados a los controllers 
 ### 1. `GET` — Obtener todos
 
 - **Antes del manejo de errores:**
+  
   ![GetLibros](./CodigoAntes/LibrosController/GetLibros.png)
 
 - **Después del manejo de errores:**
+  
   ![GetLibrosCorregido](./CodigoCorregido/LibrosController/GetLibrosCorregido.png)
 
 ---
